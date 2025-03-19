@@ -23,7 +23,7 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git remote set-url origin https://$GH_PAT@github.com/andreluis2005/auto-commit-bot.git
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/andreluis2005/auto-commit-bot.git
           git add auto_update.log
           git commit -m "Commit automático - $(date)" || echo "Nenhuma alteração para commit"
           git push origin main
