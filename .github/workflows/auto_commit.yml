@@ -13,8 +13,8 @@ jobs:
 
       - name: Configurar Git
         run: |
-          git config --global user.name "andreluis2005"
-          git config --global user.email "andreluis2005@gmail.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Criar/modificar arquivo
         run: echo "Atualização automática em $(date)" >> auto_update.log
