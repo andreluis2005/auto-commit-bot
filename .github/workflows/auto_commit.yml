@@ -3,6 +3,7 @@ name: Auto Commit Daily
 on:
   schedule:
     - cron: "0 12 * * *"  # Executa diariamente às 12h UTC
+  workflow_dispatch:  # Permite executar manualmente
 
 jobs:
   commit:
